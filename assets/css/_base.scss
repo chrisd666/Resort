@@ -141,4 +141,19 @@ body {
         family: 'Open sans', sans-serif;
         size: 1rem;
     }
+
+    color: $color-dark;
+}
+
+h1,
+h2 {
+    font-family: $primary-font;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+.txt-color-primary {
+    color: $primary-color;
 }

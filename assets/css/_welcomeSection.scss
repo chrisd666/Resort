@@ -1,18 +1,67 @@
 #welcome-section {
-    height: 100vh;
+    padding: 80px 60px;
 
     .container {
         height: 100%;
         align-items: center;
         display: flex;
         justify-content: center;
+
+
     }
 
-    .col-sm-6 {}
-
-    .col-sm-6,
-    img {
-        width: 100%;
+    .column {
         height: 100%;
+
+        .welcome-content,
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        img {
+            box-shadow: 4px 4px 10px #000;
+        }
+
+        .welcome-content {
+            .welcome-txt {
+                color: $primary-color;
+                text-transform: uppercase;
+                font-size: 1.2rem;
+                letter-spacing: 2px;
+            }
+
+            .subhead {
+                font-size: 1.4rem;
+                font-weight: 600;
+                letter-spacing: 1px;
+            }
+
+            p {
+                font-size: 1.1rem;
+                letter-spacing: 1px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .welcome-content {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 576px) {
+    #welcome-section {
+        padding: 80px 40px;
+    }
+
+    .welcome-content {
+        text-align: center;
+
+        h1 {
+            font-size: 3.8rem;
+        }
     }
 }
