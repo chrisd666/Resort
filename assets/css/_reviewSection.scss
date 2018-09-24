@@ -1,0 +1,15 @@
+#reviewSection {
+    height: 100vh;
+
+    .wrapper {
+        height: 100%;
+        background: $primary-color;
+
+        .container,
+        .carousel,
+        .carousel-inner,
+        .carousel-item {
+            height: 100%;
+        }
+    }
+}
