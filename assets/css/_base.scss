@@ -145,13 +145,16 @@ body {
     color: $color-dark;
 }
 
-h1,
-h2 {
+h1 {
     font-family: $primary-font;
 }
 
 h1 {
     font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
 }
 
 h3 {
