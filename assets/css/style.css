@@ -320,17 +320,17 @@ header .carousel-item .carousel-caption p {
 
 #info {
   min-height: 100vh;
-}
-
-#info .info-container {
-  height: 100%;
   background: url("../images/main/info.jpg") no-repeat fixed center;
   background-size: cover;
 }
 
+#info .info-container {
+  min-height: 100vh;
+}
+
 #info .info-container .overlay {
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 #info .info-container .overlay .container {
@@ -344,16 +344,13 @@ header .carousel-item .carousel-caption p {
 }
 
 #info .info-container .overlay .container .col-sm-4 .info-items .item-icon {
-  font-size: 40px;
+  font-size: 30px;
   color: #eca400;
 }
 
-#info .info-container .overlay .container .col-sm-4 .info-items .item-text h3 {
+#info .info-container .overlay .container .col-sm-4 .info-items .item-text h4 {
   letter-spacing: 1px;
-}
-
-#info .info-container .overlay .container .col-sm-4 .info-items .item-text p {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
 }
 
 #info .info-container .overlay h1 {
@@ -375,12 +372,6 @@ header .carousel-item .carousel-caption p {
   }
   .info-items {
     text-align: center;
-  }
-  .info-items h3 {
-    font-size: 1.5rem;
-  }
-  #info .info-container .overlay .container .col-sm-4 .info-items .item-text p {
-    font-size: 1rem;
   }
 }
 
@@ -458,5 +449,15 @@ header .carousel-item .carousel-caption p {
   #reviewSection .wrapper .carousel-item blockquote small {
     font-size: .8rem;
   }
+}
+
+footer {
+  background: #222222;
+  color: #fff;
+  padding: 40px 0;
+}
+
+footer .wrapper {
+  padding: 0 30px;
 }
 /*# sourceMappingURL=style.css.map */
