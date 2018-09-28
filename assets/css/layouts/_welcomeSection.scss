@@ -45,23 +45,3 @@
         }
     }
 }
-
-@media (max-width: 768px) {
-    .welcome-content {
-        margin-bottom: 50px;
-    }
-}
-
-@media (max-width: 576px) {
-    #welcome-section {
-        padding: 80px 40px;
-    }
-
-    .welcome-content {
-        text-align: center;
-
-        h1 {
-            font-size: 3.8rem;
-        }
-    }
-}

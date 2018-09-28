@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster|Open+Sans|Playfair+Display');
 
-@import 'variables';
-@import 'base';
-@import 'header';
-@import 'welcomeSection';
-@import 'infoSection';
-@import 'reviewSection';
-@import 'footer';
+@import 'theme';
+@import 'base/base';
+@import 'layouts/layout';
+@import 'state';

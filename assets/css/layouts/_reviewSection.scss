@@ -54,35 +54,3 @@
 
     }
 }
-
-@media only screen and (max-width: 768px) {
-    #reviewSection .wrapper .carousel-item {
-        padding: 60px 60px;
-
-        blockquote {
-            h3 {
-                font-size: 1.5rem;
-            }
-
-            small {
-                font-size: 1rem;
-            }
-        }
-    }
-}
-
-@media only screen and (max-width: 576px) {
-    #reviewSection .wrapper .carousel-item {
-        padding: 60px 20px;
-
-        blockquote {
-            h3 {
-                font-size: 1.2rem;
-            }
-
-            small {
-                font-size: .8rem;
-            }
-        }
-    }
-}

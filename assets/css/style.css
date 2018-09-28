@@ -165,8 +165,10 @@ header {
 
 header nav {
   background-color: #102542;
-  -webkit-box-shadow: 0px 5px 10px #000;
-          box-shadow: 0px 5px 10px #000;
+  -webkit-box-shadow: 5px 5px 10px #000;
+          box-shadow: 5px 5px 10px #000;
+  -webkit-box-shadow: -5px 5px 10px #000;
+          box-shadow: -5px 5px 10px #000;
 }
 
 header nav .lnr {
@@ -200,12 +202,15 @@ header nav .active .nav-link::after {
   background-color: #eca400;
 }
 
+header main .carousel-item {
+  position: relative;
+}
+
 header main,
 header .carousel,
 header .carousel-inner,
 header .carousel-item {
   height: 100%;
-  position: relative;
 }
 
 header main img,
@@ -221,7 +226,7 @@ header .carousel .carousel-caption,
 header .carousel-inner .carousel-caption,
 header .carousel-item .carousel-caption {
   position: absolute;
-  top: 45%;
+  top: 40%;
 }
 
 header main .carousel-caption p,
@@ -232,21 +237,6 @@ header .carousel-item .carousel-caption p {
   font-size: 1rem;
   letter-spacing: 3px;
   word-spacing: 5px;
-}
-
-@media only screen and (max-width: 768px) {
-  .navbar-nav {
-    text-align: center;
-  }
-}
-
-@media only screen and (max-width: 576px) {
-  #carouselCaption {
-    top: 33%;
-  }
-  #carouselCaption h1 {
-    font-size: 3rem;
-  }
 }
 
 #welcome-section {
@@ -300,24 +290,6 @@ header .carousel-item .carousel-caption p {
   margin-bottom: 10px;
 }
 
-@media (max-width: 768px) {
-  .welcome-content {
-    margin-bottom: 50px;
-  }
-}
-
-@media (max-width: 576px) {
-  #welcome-section {
-    padding: 80px 40px;
-  }
-  .welcome-content {
-    text-align: center;
-  }
-  .welcome-content h1 {
-    font-size: 3.8rem;
-  }
-}
-
 #info {
   min-height: 100vh;
   background: url("../images/main/info.jpg") no-repeat fixed center;
@@ -361,18 +333,6 @@ header .carousel-item .carousel-caption p {
 
 #info .info-container .overlay .info-items {
   color: #fff;
-}
-
-@media (max-width: 576px) {
-  .container {
-    padding: 20px 40px;
-  }
-  .container h1 {
-    font-size: 3rem;
-  }
-  .info-items {
-    text-align: center;
-  }
 }
 
 #reviewSection .wrapper {
@@ -427,30 +387,6 @@ header .carousel-item .carousel-caption p {
   letter-spacing: 4px;
 }
 
-@media only screen and (max-width: 768px) {
-  #reviewSection .wrapper .carousel-item {
-    padding: 60px 60px;
-  }
-  #reviewSection .wrapper .carousel-item blockquote h3 {
-    font-size: 1.5rem;
-  }
-  #reviewSection .wrapper .carousel-item blockquote small {
-    font-size: 1rem;
-  }
-}
-
-@media only screen and (max-width: 576px) {
-  #reviewSection .wrapper .carousel-item {
-    padding: 60px 20px;
-  }
-  #reviewSection .wrapper .carousel-item blockquote h3 {
-    font-size: 1.2rem;
-  }
-  #reviewSection .wrapper .carousel-item blockquote small {
-    font-size: .8rem;
-  }
-}
-
 footer {
   background: #222222;
   color: #fff;
@@ -459,5 +395,56 @@ footer {
 
 footer .wrapper {
   padding: 0 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar-nav {
+    text-align: center;
+  }
+  #carouselCaption h1 {
+    font-size: 4rem;
+  }
+  .welcome-content {
+    margin-bottom: 50px;
+  }
+  #reviewSection blockquote h3 {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  #carouselCaption {
+    top: 33%;
+  }
+  #carouselCaption h1 {
+    font-size: 3rem;
+  }
+  #welcome-section {
+    padding: 80px 40px;
+  }
+  .welcome-content {
+    text-align: center;
+  }
+  .welcome-content h1 {
+    font-size: 3.8rem;
+  }
+  .container {
+    padding: 20px 40px;
+  }
+  .container h1 {
+    font-size: 3rem;
+  }
+  .info-items {
+    text-align: center;
+  }
+  #reviewSection .wrapper .carousel-item {
+    padding: 60px 30px;
+  }
+}
+
+@media only screen and (max-height: 350px) {
+  #carouselCaption {
+    top: 20%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
